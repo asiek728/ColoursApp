@@ -14,8 +14,8 @@ const App = () => {
 
          <Route path="/colours">
           <Route index element={<Pages.Colour />} />
-          {/* <Route path="/new" element={<Pages.ColourItem />} /> */}
-          {/* <Route path="/:colour" element={<Pages.ColourItem />} /> */}
+          <Route path="new" element={<Pages.ColourItem />} />
+          <Route path=":colour" element={<Pages.ColourItem />} />
         </Route> 
 
         <Route path="*" element={<Pages.NotFound />} />
