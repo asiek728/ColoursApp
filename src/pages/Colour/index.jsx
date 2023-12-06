@@ -11,7 +11,7 @@ const Colour = () => {
     }
 
     fetchColours()
-  }, [])
+  }, [colours])
 
   const displayColours = coloursData.map(colour => (
     <div key={colour.id}>
